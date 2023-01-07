@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script
+    src="https://kit.fontawesome.com/50c70e9acb.js"
+      crossorigin="anonymous"
+    ></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: "449px",
+            // => @media (min-width: 640px) { ... }
+
+            md: "600px",
+            // => @media (min-width: 768px) { ... }
+
+            lg: "1024px",
+            // => @media (min-width: 1024px) { ... }
+
+            xl: "1280px",
+            // => @media (min-width: 1280px) { ... }
+
+            "2xl": "1536px",
+            // => @media (min-width: 1536px) { ... }
+          },
+        },
+      };
+    </script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Landing -->
+
+    <div class="landing p-7">
+      <div class="nav p-5">
+        <!-- name and hamburger -->
+        <div class="sm">
+          <div class="nav sm:hidden flex justify-between ham">
+            <a
+              href="#"
+              class="font-semibold hover:text-blue-900 transition-colors"
+              id=""
+              >Aayush</a>
+            <a href="#" class="" id=""><i class="fa-solid fa-bars"></i></a>
+          </div>
+        </div>
+        <div class="hidden sm:flex justify-end relative space-x-5">
+          <a
+            href="#"
+            class="absolute left-0 font-semibold hover:text-blue-800 transition-colors"
+            id=""
+            >Aayush</a
+          >
+          <a href="#" class="hover:text-amber-500 transition-colors" id="h"
+            >Home</a
+          >
+          <a href="#about" class="hover:text-amber-500 transition-colors" id="h"
+            >About</a
+          >
+          <a href="#" class="hover:text-amber-500 transition-colors" id="h"
+            >Services</a
+          >
+          <a href="#" class="hover:text-amber-500 transition-colors" id="h"
+            >Skills</a
+          >
+          <a href="#" class="hover:text-amber-500 transition-colors" id="h"
+            >Project</a
+          >
+          <a href="#" class="hover:text-amber-500 transition-colors" id="h"
+            >Contact</a
+          >
+        </div>
+      </div>
+
+      <!-- second part -->
+<!-- Intro to display in sm screen -->
+    <div class="sm:hidden small">
+       <div class="intro">
+         <img src="./images/IMG_20220406_170409_996-01-modified.png" alt="" class="image w-[100px] mt-7 m-auto py-4">
+       </div>
+    </div>
+
+      <div class="second p-2 flex justify-between items-center sm:mt-14 ">
+        <!-- Stiky social icons -->
+        <div class=" flex flex-col ">
+          <a href="" class="" id=""><i class="fa-brands fa-instagram py-5 "></i></a>
+          <a href="#" class="" id=""><i class="fa-brands fa-github py-5"></i></a>
+          <a href="#" class="" id=""><i class="fa-brands fa-linkedin py-5"></i></a>
+          <a href="#" class="" id=""><i class="fa-brands fa-discord py-5"></i></a>
+        </div>
+        
+        <!-- intro -->
+        <div class="intro px-8 ">
+          <h1 class="text py-5 text-3xl font-semibold">Hi' I am Aayush Pandey</h1>
+          <p class="para py-3 text-gray-500 font-semibold">FrontEnd Developer</p>
+          <p class="para py-3 text-gray-500">High Level Experience in design and development knowledge, producing quality work..</p>
+          <button class="button bg-blue-800 text-white font-semibold px-4 py-3 mt-10 hover:bg-amber-500"></i>Contact Me <i class="fa-brands fa-telegram"></i></button>
+          <div class="scroll space-x-2 py-6"><a href="#" class="" id="">
+            <p class="" > <i class="fa-solid fa-computer-mouse "></i> &nbsp;  Scroll down <i class=" fa fa-light fa-arrow-down"></i></p>
+          </a></div>
+        </div>
+        <!-- image -->
+        <div class="hidden md:block w-[260px] px-8 ">
+          <img src="./images/IMG_20220406_170409_996-01-modified.png" alt="" class="myself">
+          
+        </div>
+        <!-- Display in large screen -->
+        <!-- <div class=" w-[260px] px-8 ">
+          <img src="./images/IMG_20220406_170409_996-01-modified.png" alt="" class="myself">
+          
+        </div> -->
+
+      </div>
+
+      <!--About Me  -->
+      <div class="aboutMe mt-8 text-gray-500 " id="about">
+        <div class="upper ">
+          <h1 class="text-center font-semibold text-3xl text-black p-3">About Me</h1>
+          <img src="./images/IMG_2.jpg" alt="" class="small image sm:hidden  w-[150px] mx-auto py-9 ">
+          <h2 class="text-center pt-4 font-semibold">My Introduction</h2>
+        </div>
+        <div class="lower flex justify-center items-center ml-7 ">
+          <div class="left hidden sm:block image ">
+            <img src="./images/IMG_2.jpg " alt="" class="image w-[180px]  ">
+          </div>
+          <div class="right">
+            <div class="para flex-col justify-evenly p-8">
+              <p>Web developer with extensive knowledge and years os experience in web technologies delivering quality work.</p>
+              <div class="onlyPlus flex flex-row py-10 items-center">
+              <div class="plus  w-2/3">
+                <h1 class="w-1/2 text-center"><span class="span text-xl font-bold text-black ">01+</span> </h1>
+                <h1>years of experience</h1>
+                <h1></h1>
+              </div>
+              <div class="plus flex flex-col w-2/3">
+                <h1 class="w-1/2 text-center"><span class="span text-xl font-bold text-black">02+</span> </h1>
+                <h1>Contributed in Projects</h1>
+                <h1></h1>
+                
+              </div>
+              <div class="plus flex flex-col ">
+                <h1 class=" text-center"><span class="span text-xl font-bold text-black ">08+</span> </h1>
+                <h1>Projects Made</h1>
+                <h1></h1>
+            </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills -->
+    <div class="skills">
+      
+    </div>
+    </div>
+  </body>
+</html>
